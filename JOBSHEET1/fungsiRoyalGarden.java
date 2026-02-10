@@ -1,4 +1,4 @@
-public class ArrayRoyalGarden {
+public class fungsiRoyalGarden {
 
     static int[] harga = {75000, 50000, 60000, 10000};
     // Urutan: Aglonema, Keladi, Alocasia, Mawar
