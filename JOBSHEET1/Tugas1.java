@@ -6,7 +6,6 @@ public class Tugas1 {
 
         char[] KODE = {'A','B','D','E','F','G','H','L','N','T'};
 
-        // Array 2 dimensi: nama kota (per huruf)
         char[][] KOTA = {
             {'B','A','N','D','U','N','G'},
             {'J','A','K','A','R','T','A'},
@@ -25,7 +24,6 @@ public class Tugas1 {
 
         boolean ditemukan = false;
 
-        // proses pencarian
         for (int i = 0; i < KODE.length; i++) {
             if (inputKode == KODE[i]) {
                 System.out.print("Nama Kota: ");
