@@ -9,7 +9,7 @@ public class MahasiswaDemo08 {
 
         Mahasiswa08[] arrayOfMahasiswa = new Mahasiswa08[3];
 
-        for (int i = 0; i < arrayOfMahasiswa.length; i++) {
+        for (int i = 0; i < 3; i++) {
             arrayOfMahasiswa[i] = new Mahasiswa08();
 
             System.out.println("Data Mahasiswa ke-" + (i + 1));
@@ -37,7 +37,5 @@ public class MahasiswaDemo08 {
             System.out.println("IPK   : " + mhs.ipk);
             System.out.println();
         }
-
-        sc.close();
     }
 }
