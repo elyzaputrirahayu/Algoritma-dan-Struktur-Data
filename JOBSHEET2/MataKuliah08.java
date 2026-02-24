@@ -6,6 +6,16 @@ public class MataKuliah08 {
     int sks;
     int jumlahJam;
 
+    public MataKuliah08 () {
+
+    }
+
+    public MataKuliah08 (String KodeMK, String nama, int sks, int jumlahJam) {
+        this.KodeMK = KodeMK;
+        this.nama = nama;
+        this.sks = sks;
+        this.jumlahJam = jumlahJam;
+    }
     void tampilInformasi () {
         System.out.println("KodeMK : " + KodeMK);
         System.out.println("nama : " +nama);
