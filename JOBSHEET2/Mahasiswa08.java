@@ -6,16 +6,16 @@ public class Mahasiswa08 {
     String kelas;
     double ipk;
 
-     public Mahasiswa08() {
+    public Mahasiswa08() {
 
-        }
+    }
 
-        public Mahasiswa08(String nm, String nim, double ipk, String kls) {
-            nama = nm;
-            this.nim = nim;
-            this.ipk = ipk;
-            kelas = kls;
-        }
+    public Mahasiswa08(String nim, String nama, String kelas, double ipk) {
+    this.nim = nim;
+    this.nama = nama;
+    this.kelas = kelas;
+    this.ipk = ipk;
+}
 
     void tampilkanInformasi () {
         System.out.println("Nama: " + nama);
@@ -24,13 +24,16 @@ public class Mahasiswa08 {
         System.out.println("Kelas: " + kelas);
     }
 
-    void ubahkelas (String kelasBaru) {
-        kelas = kelasBaru;
+    void ubahKelas(String kelasBaru) {
+    kelas = kelasBaru;
     }
-
-    void updateIpk (double ipkbaru) {
-        ipk = ipkbaru;
+    void updateIpk(double ipkBaru) {
+    if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
+        ipk = ipkBaru;
+    } else {
+        System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
     }
+}
 
     String nilaiKinerja() {
         if (ipk >= 3.5) {
