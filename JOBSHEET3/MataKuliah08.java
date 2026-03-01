@@ -1,14 +1,16 @@
 package JOBSHEET3;
 
-public class Matakuliah08 {
+public class MataKuliah08 {
     String kode;
     String nama;
     int sks;
+    int jumlahJam;
 
-    public Matakuliah08(String kode, String nama, int sks) {
+    public MataKuliah08(String kode, String nama, int sks, int jumlahJam) {
         this.kode = kode;
         this.nama = nama;
         this.sks = sks;
+        this.jumlahJam = jumlahJam;
     }
 
     void cetakInfo() {
