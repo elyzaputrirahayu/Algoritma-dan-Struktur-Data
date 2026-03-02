@@ -4,9 +4,21 @@ public class Dosen08 {
     
     String idDosen;
     String nama;
+    String bidangkeahlian;
     Boolean statusAktif;
     int tahunBergabung;
-    String bidangkeahlian;
+
+    public Dosen08 () {
+
+    }
+
+    public Dosen08 (String idDosen, String nama, String bidangkeahlian, Boolean statusAktif, int tahunBergabung) {
+        this.idDosen = idDosen;
+        this.nama = nama;
+        this.bidangkeahlian = bidangkeahlian;
+        this.tahunBergabung = tahunBergabung;
+        this.statusAktif = statusAktif;
+    }
 
     void tampilInformasi() {
         System.out.println("id Dosen : " + idDosen);

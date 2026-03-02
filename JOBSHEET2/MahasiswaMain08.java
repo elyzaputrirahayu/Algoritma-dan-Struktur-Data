@@ -5,33 +5,18 @@ public class MahasiswaMain08 {
     public static void main(String[] args) {
 
         Mahasiswa08 mhs1 = new Mahasiswa08();
+        mhs1.nama = "Muhammad Ali Farhan";
+        mhs1.nim = "2241720171";
+        mhs1.kelas = "SI 2J";
+        mhs1.ipk = 3.55;
 
-        mhs1.nama = "Elyza Putri";
-        mhs1.nim = "2241720001";
-        mhs1.kelas = "TI-2A";
-        mhs1.ipk = 3.45;
-
-        System.out.println("=== DATA MAHASISWA 1 ===");
         mhs1.tampilkanInformasi();
-        System.out.println("Nilai Kinerja: " + mhs1.nilaiKinerja());
-
-        mhs1.ubahKelas("TI-2B");
-        mhs1.updateIpk(3.80);
-
-        System.out.println("\n=== SETELAH UPDATE ===");
+        mhs1.ubahKelas("SI 2J");
+        mhs1.updateIpk(3.60);
         mhs1.tampilkanInformasi();
-        System.out.println("Nilai Kinerja: " + mhs1.nilaiKinerja());
 
-
-        Mahasiswa08 mhs2 = new Mahasiswa08(
-                "2241720002",
-                "Muhammad Ali Farhan",
-                "SI-2J",
-                3.70
-        );
-
-        System.out.println("\n=== DATA MAHASISWA 2 ===");
+        Mahasiswa08 mhs2 = new Mahasiswa08("2141720160", "Annisa Nabila", "TI 2L", 3.25);
+        mhs2.updateIpk(3.30);
         mhs2.tampilkanInformasi();
-        System.out.println("Nilai Kinerja: " + mhs2.nilaiKinerja());
     }
 }

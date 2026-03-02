@@ -7,7 +7,7 @@ public class DosenDemo08 {
         
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Masukkan jumlah dosen : ");
+        System.out.print("Masukkan jumlah dosen : ");
         int jumlah = sc.nextInt();
         sc.nextLine();
 
