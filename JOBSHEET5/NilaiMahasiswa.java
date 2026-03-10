@@ -5,7 +5,6 @@ public class NilaiMahasiswa {
     static int[] uts = {78, 85, 90, 76, 92, 88, 80, 82};
     static int[] uas = {82, 88, 87, 79, 95, 85, 83, 84};
 
-    // Divide and Conquer mencari nilai max
     static int maxUTS(int[] arr, int left, int right) {
         if (left == right) {
             return arr[left];
@@ -19,7 +18,6 @@ public class NilaiMahasiswa {
         return Math.max(maxKiri, maxKanan);
     }
 
-    // Divide and Conquer mencari nilai min
     static int minUTS(int[] arr, int left, int right) {
         if (left == right) {
             return arr[left];
@@ -33,7 +31,6 @@ public class NilaiMahasiswa {
         return Math.min(minKiri, minKanan);
     }
 
-    // Brute Force menghitung rata-rata
     static double rataUAS(int[] arr) {
         int total = 0;
 
