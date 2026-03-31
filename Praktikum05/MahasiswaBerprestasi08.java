@@ -1,7 +1,7 @@
 package Praktikum05;
 
 public class MahasiswaBerprestasi08 {
-    Mahasiswa08 [] listMhs = new Mahasiswa08[5];
+    Mahasiswa08 [] listMhs;
     int idx;
 
     void tambah (Mahasiswa08 m) {
@@ -11,6 +11,10 @@ public class MahasiswaBerprestasi08 {
         } else {
             System.out.println("data sudah penuh");
         }
+    }
+
+    MahasiswaBerprestasi08 (int kapasitas) {
+        listMhs = new Mahasiswa08[kapasitas];
     }
 
     void tampil () {
@@ -51,7 +55,7 @@ public class MahasiswaBerprestasi08 {
         for (int i = 1; i < listMhs.length; i++) {
             Mahasiswa08 temp = listMhs[i];
             int j = i;
-            while (j > 0 && listMhs [j-1].ipk > temp.ipk) {
+            while (j > 0 && listMhs [j-1].ipk < temp.ipk) {
                 listMhs[j] = listMhs[j-1];
                 j--;
             }
