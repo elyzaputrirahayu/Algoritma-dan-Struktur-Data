@@ -5,11 +5,11 @@ public class Peminjaman08 {
     int lamaPinjam;
     int denda;
 
-    Peminjaman08(String nim, String nama, String judul, int lama) {
+    Peminjaman08(String nim, String nama, String jdl, int lm) {
         this.nim = nim;
         this.nama = nama;
-        this.judul = judul;
-        this.lamaPinjam = lama;
+        this.judul = jdl;
+        this.lamaPinjam = lm;
         hitungDenda();
     }
 
