@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class Peminjaman08 {
 
-    int lamaPinjam;
     int denda;
+    int telat;
     String Nama;
     String NIM;
     String JudulBuku;
+    int lamaPinjam;
 
-    Peminjaman08 (int LM, String Nam, String NIM, String juBu) {
+    Peminjaman08 (String NIM, String Nam, String juBu, int LM) {
         this.Nama = Nam;
         this.NIM = NIM;
         this.JudulBuku = juBu;
@@ -24,10 +25,11 @@ public class Peminjaman08 {
             denda = telat * 2000;
         } else {
             denda = 0;
+            telat = 0;
         }
     }
 
     void tampil() {
-        System.out.println(NIM + " | " + Nama + " | " + JudulBuku + " | " + lamaPinjam + " hari | Denda " + denda);
+        System.out.println(NIM + " | " + Nama + " \t| " + JudulBuku + " \t| " + "lama : " + lamaPinjam + " | " + "terlambat : " + telat + " | " + "Denda : " + denda);
     }
 }

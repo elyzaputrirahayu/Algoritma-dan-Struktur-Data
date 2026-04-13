@@ -12,6 +12,6 @@ public class Mahasiswa08 {
     }
 
     void tampilkanMahasiswa (Mahasiswa08 [] arrayOfMahasiswa) {
-        System.out.println(NIM + " | " + Nama + " | " + Prodi);
+        System.out.println("NIM : " + NIM + " | " + "\tNama : " + Nama + " \t| " + "yProdi : " + Prodi);
     }
 }
