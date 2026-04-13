@@ -1,17 +1,15 @@
 package CM1;
 
 public class Mahasiswa08 {
-    String NIM;
-    String Nama;
-    String Prodi;
+    String nim, nama, prodi;
 
-    Mahasiswa08 (String nim, String nama, String prodi) {
-        this.NIM = nim;
-        this.Nama = nama;
-        this.Prodi = prodi;
+    Mahasiswa08(String nim, String nama, String prodi) {
+        this.nim = nim;
+        this.nama = nama;
+        this.prodi = prodi;
     }
 
-    void tampilkanMahasiswa (Mahasiswa08 [] arrayOfMahasiswa) {
-        System.out.println("NIM : " + NIM + " | " + "\tNama : " + Nama + " \t| " + "yProdi : " + Prodi);
+    void tampil() {
+        System.out.println("NIM : " + nim + " | " + "Nama : " + nama + " | " + "Prodi : "+ prodi);
     }
 }

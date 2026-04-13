@@ -1,17 +1,16 @@
 package CM1;
 
 public class Buku08 {
-    String KodeBuku;
-    String Judul;
-    int TahunTerbit; 
+    String kode, judul;
+    int tahun;
 
-    Buku08 (String koBu, String judul, int taTer) {
-        this.KodeBuku = koBu;
-        this.Judul = judul;
-        this.TahunTerbit = taTer;
+    Buku08(String kode, String judul, int tahun) {
+        this.kode = kode;
+        this.judul = judul;
+        this.tahun = tahun;
     }
 
-    void tampilkanBuku () {
-        System.out.println("Kode Buku : " + KodeBuku + " | " + "Judul : " + Judul + " \t| " + "Tahun Terbit : " + TahunTerbit);
+    void tampil() {
+        System.out.println("Kode : " + kode + " | " + "Judul : " + judul + " | " + "Tahun : " + tahun);
     }
 }
