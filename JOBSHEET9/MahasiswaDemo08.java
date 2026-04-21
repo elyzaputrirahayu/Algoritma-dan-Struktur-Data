@@ -44,6 +44,9 @@ public class MahasiswaDemo08 {
                         int nilai = sc.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
+
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas : " + biner);
                     }
                     break;
 
@@ -63,7 +66,7 @@ public class MahasiswaDemo08 {
                 case 5:
                     Mahasiswa08 bawah = stack.peekBottom();
                     if (bawah != null) {
-                        System.out.println("Tugas pertama dikumpulkan oleh " + bawah);
+                        System.out.println("Tugas pertama dikumpulkan oleh " + bawah.nama);
                     }
                     break;
 
@@ -73,6 +76,6 @@ public class MahasiswaDemo08 {
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
-        } while (pilih >= 1 && pilih <= 5);
+        } while (pilih >= 1 && pilih <= 6);
     }
 }
