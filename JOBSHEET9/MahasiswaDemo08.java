@@ -20,13 +20,13 @@ public class MahasiswaDemo08 {
 
             switch (pilih) {
                 case 1:
-                    System.out.println("Nama : ");
+                    System.out.print("Nama : ");
                     String nama = sc.nextLine();
 
-                    System.out.println("NIM : ");
+                    System.out.print("NIM : ");
                     String nim = sc.nextLine();
 
-                    System.out.println("Kelas : ");
+                    System.out.print("Kelas : ");
                     String kelas = sc.nextLine();
 
                     Mahasiswa08 mhs = new Mahasiswa08(nama, nim, kelas);
@@ -38,7 +38,7 @@ public class MahasiswaDemo08 {
                     Mahasiswa08 dinilai = stack.pop();
                     if (dinilai != null) {
                         System.out.println("Menilai tugas dari " + dinilai.nama);
-                        System.out.println("Masukkan nilai (0-100) : ");
+                        System.out.print("Masukkan nilai (0-100) : ");
                         int nilai = sc.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
