@@ -64,7 +64,7 @@ public class MahasiswaMain08 {
                     for (int i = 1; i < pinjam.length; i++) {
                         Peminjaman08 temp = pinjam[i];
                         int j = i - 1;
-                        while (j >= 0 && pinjam[j].denda < temp.denda) {
+                        while (j >= 0 && pinjam[j].denda > temp.denda) {
                             pinjam[j + 1] = pinjam[j];
                             j--;
                         }
