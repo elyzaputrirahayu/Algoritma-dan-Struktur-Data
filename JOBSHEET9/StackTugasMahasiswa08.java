@@ -73,4 +73,8 @@ public class StackTugasMahasiswa08 {
         } 
         System.out.println("");
     }
+
+    public int jumlahTugas() {
+        return top + 1;
+    }
 }
