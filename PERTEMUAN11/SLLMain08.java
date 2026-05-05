@@ -1,4 +1,4 @@
-package Pertemuan12;
+package PERTEMUAN11;
 
 public class SLLMain08 {
     public static void main(String[] args) {

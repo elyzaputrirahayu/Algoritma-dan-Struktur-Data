@@ -1,4 +1,4 @@
-package Pertemuan12;
+package PERTEMUAN11;
 
 public class SingleLinkedList08 {
     NodeMahasiswa08 head;
