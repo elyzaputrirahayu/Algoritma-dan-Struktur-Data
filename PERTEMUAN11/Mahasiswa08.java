@@ -1,7 +1,5 @@
 package PERTEMUAN11;
 
-import org.w3c.dom.Node;
-
 public class Mahasiswa08 {
     String nama;
     String nim;
