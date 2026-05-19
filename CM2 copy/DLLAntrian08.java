@@ -1,4 +1,4 @@
-package CM2;
+package CM2 copy;
 
 public class DLLAntrian08 {
     nodeAntrian08 head;
@@ -67,43 +67,4 @@ public class DLLAntrian08 {
 
         return temp;
     }
-
-    public void tambahPrioritas(Pembeli08 pembeli, int posisi) {
-
-    nodeAntrian08 newNode = new nodeAntrian08(null, nomor, pembeli, null);
-    if (posisi == 1) {
-
-        newNode.next = head;
-
-        if (head != null) {
-            head.prev = newNode;
-        }
-
-        head = newNode;
-
-    } else {
-
-        nodeAntrian08 temp = head;
-
-        for (int i = 1; i < posisi - 1 && temp != null; i++) {
-            temp = temp.next;
-        }
-
-        if (temp == null) {
-            System.out.println("Posisi tidak ditemukan");
-            return;
-        }
-
-        newNode.next = temp.next;
-        newNode.prev = temp;
-
-        if (temp.next != null) {
-            temp.next.prev = newNode;
-        }
-    }
-
-    System.out.println( "Antrian PRIORITAS berhasil ditambahkan di posisi " + posisi);
-
-    nomor++;
-    }   
 }

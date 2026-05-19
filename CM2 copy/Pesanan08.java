@@ -1,4 +1,4 @@
-package CM2;
+package CM2 copy;
 
 public class Pesanan08 {
     int kodePesanan;
